@@ -9,6 +9,7 @@ import (
     "text/template"
 
     "github.com/camry/g/v2/gerrors/gerror"
+    "github.com/camry/g/v2/glog"
     "github.com/samber/lo"
     "github.com/spf13/cobra"
     "github.com/spf13/viper"
@@ -56,16 +57,22 @@ var (
         Version: Version,
         Run: func(cmd *cobra.Command, args []string) {
             tblDB, err := gdb.NewTblDB(server, db)
-            cobra.CheckErr(err)
+            if err != nil {
+                glog.Fatal(gerror.Wrapf(err, "NewTblDB Failed"))
+            }
 
             var ic *model.IgnoreConfig
             vi := viper.New()
             vi.SetConfigType("yaml")
             vi.SetConfigFile(icPath)
             err = vi.ReadInConfig()
-            cobra.CheckErr(err)
+            if err != nil {
+                glog.Fatal(gerror.Wrapf(err, "ReadInConfig Failed"))
+            }
             err = vi.Unmarshal(&ic)
-            cobra.CheckErr(err)
+            if err != nil {
+                glog.Fatal(gerror.Wrapf(err, "Unmarshal Failed"))
+            }
             icMap := lo.SliceToMap(ic.Ignores, func(item *model.IgnoreTable) (string, *model.IgnoreTable) {
                 return item.Table, item
             })
@@ -78,7 +85,7 @@ var (
 
             pbPkg, ok := lo.Last(strings.Split(goPkg, "/"))
             if !ok {
-                cobra.CheckErr(gerror.Newf("--go-pkg 参数错误（github.com/camry/pb/cbpb）。"))
+                glog.Fatal(gerror.Newf("--go-pkg 参数错误（github.com/camry/pb/cbpb）。"))
             }
 
             templateSchema := &model.TemplateSchema{
@@ -99,12 +106,18 @@ var (
             }
 
             tpl, err := template.New("TemplateSchema").Parse(TemplateTable)
-            cobra.CheckErr(err)
+            if err != nil {
+                glog.Fatal(gerror.Wrapf(err, "template.New Failed"))
+            }
             var wr bytes.Buffer
             err = tpl.Execute(&wr, templateSchema)
-            cobra.CheckErr(err)
+            if err != nil {
+                glog.Fatal(gerror.Wrapf(err, "tpl.Execute Failed"))
+            }
             err = os.WriteFile(fmt.Sprintf("%s/schema.go", out), wr.Bytes(), 0644)
-            cobra.CheckErr(err)
+            if err != nil {
+                glog.Fatal(gerror.Wrapf(err, "os.WriteFile Failed"))
+            }
         },
     }
 )

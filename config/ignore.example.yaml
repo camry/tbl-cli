@@ -1,0 +1,777 @@
+# Ignore Table Column Config.
+ignores:
+    - table: base_achievement
+      columns:
+          - ach_fall_id
+    - table: base_achievement_type
+      columns:
+          - ach_type_name
+    - table: base_activity
+      columns:
+          - act_type
+          - act_name
+          - act_closed
+          - remark
+    - table: base_activity_accum_pay_task
+      columns:
+          - fall_id
+    - table: base_activity_advanced_task
+    - table: base_activity_bounty_module
+    - table: base_activity_bounty_task
+      columns:
+          - fighter_camp
+          - fall_id
+    - table: base_activity_calendar
+    - table: base_activity_daily_pay_items
+    - table: base_activity_daily_recharge
+    - table: base_activity_daily_recharge_items
+    - table: base_activity_dig_ore
+      columns:
+          - master_id
+    - table: base_activity_dig_task
+    - table: base_activity_explore_graph
+      columns:
+          - graph_vectors
+          - graph_desc
+    - table: base_activity_explore_scene
+      columns:
+          - fall_id
+    - table: base_activity_explore_task
+    - table: base_activity_fall
+    - table: base_activity_fighter_starring
+    - table: base_activity_first_pay_relay
+    - table: base_activity_fly_chess
+    - table: base_activity_gift
+    - table: base_activity_gift_pack
+    - table: base_activity_gift_sprint
+    - table: base_activity_hunt_map
+    - table: base_activity_hunt_map_generate
+    - table: base_activity_hunt_map_generate_scheme
+    - table: base_activity_items
+    - table: base_activity_items_exchange
+      columns:
+          - fall_id
+          - reset_type
+          - remark
+    - table: base_activity_items_first_pay
+    - table: base_activity_items_mission
+    - table: base_activity_items_online
+    - table: base_activity_items_pass_check
+    - table: base_activity_items_progress
+    - table: base_activity_items_scene_sprint
+    - table: base_activity_items_seven_days
+    - table: base_activity_items_sign_in
+    - table: base_activity_items_sprint
+      columns:
+          - is_last
+          - fall_id
+    - table: base_activity_items_sprint_round
+    - table: base_activity_limit
+    - table: base_activity_limited_time
+    - table: base_activity_loop
+    - table: base_activity_open
+    - table: base_activity_permit
+      columns:
+          - permit_id
+          - goods_id
+          - reset_days
+    - table: base_activity_permit_id
+    - table: base_activity_permit_items
+    - table: base_activity_permit_type
+      columns:
+          - permit_desc
+          - permit_show_type
+    - table: base_activity_privilege_card
+      columns:
+          - card_desc
+    - table: base_activity_prop_convert
+      columns:
+          - to_prop_id
+          - to_prop_num
+          - mail_subject
+    - table: base_activity_push_limit
+    - table: base_activity_show_type
+      columns:
+          - act_show_type_desc
+    - table: base_activity_trigger
+    - table: base_activity_type
+    - table: base_act_grid_event
+    - table: base_act_grid_scene
+      columns:
+          - master_id
+    - table: base_act_grid_scene_site
+      columns:
+          - first_scene_id
+    - table: base_act_monthly_boss
+    - table: base_act_retrieve
+      columns:
+          - to_prop_id
+          - limit_num
+          - limit_add_id
+    - table: base_act_retrieve_add
+    - table: base_act_seek_item
+      columns:
+          - is_regular
+    - table: base_act_seek_scene
+      columns:
+          - master_id
+    - table: base_ads_store
+      columns:
+          - ads_fall_id
+    - table: base_ads_store_fall
+    - table: base_adv_boss_scene
+    - table: base_ammo_type
+    - table: base_arena_bots
+    - table: base_arena_challenge_progress
+    - table: base_arena_fall
+    - table: base_arena_prizes
+    - table: base_arena_tier_prizes
+      columns:
+          - arena_tier_fall_id
+    - table: base_arena_trial_bots
+    - table: base_arena_trial_tier_prizes
+      columns:
+          - arena_tier_fall_id
+    - table: base_arms
+      columns:
+          - weight
+    - table: base_arms_ads
+    - table: base_arms_fall
+    - table: base_arms_jigsaw
+      columns:
+          - fall_id
+    - table: base_arms_level
+      columns:
+          - weight
+    - table: base_arms_position
+    - table: base_arms_scene
+      columns:
+          - scene_order
+          - next_scene_id
+          - season_fall_id
+          - scene_first_event_id
+          - scene_sweep_fall_id
+          - scene_fall_id
+    - table: base_arms_scene_achv
+    - table: base_arms_scene_event
+      columns:
+          - next_scene_event_id
+          - scene_type_ids
+    - table: base_arms_type
+    - table: base_artifact_lottery
+    - table: base_artifact_lottery_cost
+    - table: base_attr
+      columns:
+          - attr_desc
+    - table: base_attr_add_type
+    - table: base_attr_effect
+      columns:
+          - attr_desc
+    - table: base_banner
+      columns:
+          - banner_group
+          - next_banner_id
+          - banner_type
+          - display_days
+          - cond_type_id
+          - is_close
+          - remark
+    - table: base_banner_cond_type
+    - table: base_banner_status
+    - table: base_banner_type
+    - table: base_battle_position
+    - table: base_battle_preview
+    - table: base_beauty_rescue
+      columns:
+          - part_desc
+    - table: base_bots_t13
+    - table: base_bots_t33
+    - table: base_bots_t39
+    - table: base_box
+      columns:
+          - fall_id
+          - master_id
+    - table: base_buff
+      columns:
+          - affiliated_tags
+          - conflict_tags
+          - immune_tags
+          - conflict_self
+          - immune_self
+          - has_dead
+          - buff_desc
+    - table: base_buff_tag
+    - table: base_canyon_box
+    - table: base_canyon_fall
+    - table: base_card
+    - table: base_card_fall
+    - table: base_challenge
+      columns:
+          - challenge_desc
+    - table: base_challenge_loop
+    - table: base_chariot
+    - table: base_chariot_cast
+    - table: base_chariot_cast_level
+    - table: base_chariot_cast_level_fall
+    - table: base_chariot_cast_skin_level
+    - table: base_chariot_cast_skin_level_attr
+    - table: base_chariot_cast_skin_prop
+    - table: base_chariot_cast_skin_unlock
+    - table: base_chariot_item
+    - table: base_chariot_item_position
+    - table: base_chariot_item_quality
+    - table: base_chariot_level
+    - table: base_chariot_rand_item_attr
+    - table: base_chariot_rand_item_attr_base
+    - table: base_chariot_rand_item_attr_float
+    - table: base_chariot_rand_item_attr_pct
+    - table: base_chariot_rand_item_level
+    - table: base_chariot_rand_item_position
+    - table: base_chariot_rand_item_quality
+    - table: base_chariot_rand_item_quality_pct
+    - table: base_chariot_skin
+    - table: base_chariot_skin_attr_add_type
+    - table: base_chariot_skin_effect_attr
+      columns:
+          - attr_desc
+    - table: base_chariot_skin_fall
+    - table: base_chariot_skin_level
+    - table: base_chariot_skin_level_attr
+    - table: base_chariot_skin_prop
+    - table: base_chariot_skin_scene
+    - table: base_chariot_skin_step_level
+    - table: base_chariot_skin_step_level_attr
+    - table: base_chariot_skin_unlock
+    - table: base_chariot_step_level
+    - table: base_chasm
+    - table: base_chasm_black_market
+      columns:
+          - weight
+    - table: base_chasm_black_market_pool
+      columns:
+          - weight
+    - table: base_chasm_buff_pool
+      columns:
+          - weight
+    - table: base_chasm_card_attr
+      columns:
+          - weight
+    - table: base_chasm_card_attr_type
+    - table: base_chasm_card_pool
+      columns:
+          - weight
+    - table: base_chasm_event_type
+    - table: base_chasm_fall
+    - table: base_chasm_map_event
+    - table: base_chasm_market
+    - table: base_chasm_market_pool
+      columns:
+          - customs_min
+          - customs_max
+          - lottery_times
+          - weight
+    - table: base_chasm_market_selection
+      columns:
+          - lottery_times
+          - customs_min
+          - customs_max
+          - weight
+    - table: base_chasm_monster
+    - table: base_chasm_monster_pool
+    - table: base_collect_attr_passive_cond
+      columns:
+          - cond_desc
+    - table: base_cond
+    - table: base_cond_level
+    - table: base_cond_type
+      columns:
+          - cond_type_desc
+    - table: base_crazy_lottery
+    - table: base_crazy_lottery_round
+    - table: base_crystal_achv
+    - table: base_crystal_fall
+    - table: base_crystal_graph
+      columns:
+          - weight
+          - graph_desc
+    - table: base_dist
+    - table: base_dot
+      columns:
+          - dot_desc
+    - table: base_equip_position
+    - table: base_exchange_fall
+    - table: base_exchange_item
+      columns:
+          - fall_id
+          - spend_fall_id
+          - cost_fall_id
+          - reset_type
+          - remark
+    - table: base_fall_master
+    - table: base_fall_master_light
+    - table: base_fall_master_next
+    - table: base_fall_percent
+    - table: base_fall_subset
+    - table: base_fall_subset_out
+    - table: base_fall_type
+    - table: base_fighter_challenge_ce_fix
+    - table: base_fighter_challenge_fix
+    - table: base_fighter_challenge_monster
+    - table: base_fighter_challenge_rand
+    - table: base_fighter_lottery_light
+    - table: base_free_daily
+    - table: base_free_daily_fall
+    - table: base_fund_items
+    - table: base_gem_rand_attr
+      columns:
+          - weight
+    - table: base_gem_rand_attr_quality
+      columns:
+          - weight
+    - table: base_gene_lottery
+    - table: base_gene_lottery_chip
+    - table: base_guide
+      columns:
+          - guide_fall_id
+    - table: base_guide_fall
+    - table: base_guide_type
+      columns:
+          - guide_type_name
+    - table: base_guild_affairs
+      columns:
+          - affairs_fall_id
+    - table: base_guild_affairs_score
+      columns:
+          - affairs_score_fall_id
+    - table: base_guild_boss
+      columns:
+          - fall_id
+          - ko_fall_id
+          - all_fall_id
+    - table: base_guild_boss_prizes
+    - table: base_guild_fall
+    - table: base_guild_war_fall
+    - table: base_guild_war_prizes
+    - table: base_guild_war_timeline
+    - table: base_host
+    - table: base_host_db
+    - table: base_league_fall
+    - table: base_league_preheat_fall
+    - table: base_league_preheat_task
+    - table: base_league_time
+    - table: base_league_type
+    - table: base_mail_lang
+    - table: base_market
+      columns:
+          - market_desc
+    - table: base_market_fall
+    - table: base_market_item
+      columns:
+          - level_min
+          - level_max
+          - fall_id
+          - refresh_limit
+          - weight
+    - table: base_marquee
+      columns:
+          - cond_args
+          - cond_lang_id
+          - marquee_expire
+    - table: base_marquee_cond_type
+    - table: base_mini_game_car
+      columns:
+          - first_pass_fall_id
+    - table: base_mission
+    - table: base_mission_bounty
+      columns:
+          - fall_id
+    - table: base_mission_bounty_fall
+    - table: base_mission_bounty_init
+    - table: base_mission_bounty_level
+      columns:
+          - diamond
+    - table: base_mission_fall
+    - table: base_mission_score_prizes
+    - table: base_mission_trigger
+    - table: base_module
+      columns:
+          - remark
+    - table: base_module_cfg
+      columns:
+          - cfg_desc
+    - table: base_module_preview
+      columns:
+          - preview_fall_id
+    - table: base_module_preview_fall
+    - table: base_multi_camp_tower
+      columns:
+          - camp_tower_desc
+    - table: base_pay_fall
+    - table: base_pay_goods
+      columns:
+          - reset_type
+          - remark1
+          - remark2
+    - table: base_permit
+      columns:
+          - permit_desc
+    - table: base_permit_fall
+    - table: base_permit_id
+    - table: base_permit_item
+    - table: base_permit_type
+      columns:
+          - permit_desc
+    - table: base_pf
+    - table: base_privilege
+      columns:
+          - desc
+    - table: base_privilege_card
+      columns:
+          - card_desc
+    - table: base_privilege_crad_effect_type
+      columns:
+          - effect_desc
+    - table: base_privilege_crad_fall
+    - table: base_privilege_effect
+      columns:
+          - effect_desc
+    - table: base_prop
+      columns:
+          - remark
+    - table: base_prop_arg
+    - table: base_prop_drug
+    - table: base_prop_gold
+    - table: base_prop_rand
+    - table: base_prop_regain_daily
+    - table: base_prop_regain_daily_priv
+    - table: base_quality
+    - table: base_rank
+    - table: base_rank_fall
+    - table: base_rank_id
+    - table: base_rank_type
+    - table: base_region_search
+      columns:
+          - master_id
+          - weight
+          - prop_desc
+    - table: base_region_search_fall
+    - table: base_region_search_lottery
+    - table: base_region_search_power
+    - table: base_reparation
+    - table: base_reparation_fall
+    - table: base_rick_chapter
+    - table: base_rick_fall
+    - table: base_rick_task
+    - table: base_rick_task_types
+    - table: base_rotary
+    - table: base_rotary_fall
+    - table: base_rotary_item
+    - table: base_rotate
+      columns:
+          - add_fall_type
+          - add_fall_type_id
+          - one_add_fall_num
+          - ten_add_fall_num
+    - table: base_rotate_goods
+    - table: base_rotate_master
+    - table: base_rotate_refresh
+    - table: base_ruins_event_km_prize
+    - table: base_ruins_event_monster
+      columns:
+          - fight_fall_id
+          - fall_id
+    - table: base_ruins_event_prop
+      columns:
+          - fall_id
+    - table: base_ruins_event_type
+    - table: base_ruins_event_vector
+    - table: base_ruins_fall
+    - table: base_ruins_scene
+    - table: base_scene_attacker
+    - table: base_scene_attacker_option
+    - table: base_scene_bot_t13
+    - table: base_scene_bot_t33
+    - table: base_scene_bot_t39
+    - table: base_scene_chariot
+    - table: base_scene_difficulty
+    - table: base_scene_hook_cost
+    - table: base_scene_lineup_position
+      columns:
+          - position_desc
+    - table: base_scene_monster_ce_fix
+    - table: base_scene_monster_rule_t11
+    - table: base_scene_monster_rule_t12
+    - table: base_scene_monster_rule_t13
+    - table: base_scene_monster_rule_t14
+    - table: base_scene_monster_rule_t15
+    - table: base_scene_monster_rule_t16
+    - table: base_scene_monster_rule_t17
+    - table: base_scene_monster_rule_t18
+    - table: base_scene_monster_rule_t19
+    - table: base_scene_monster_rule_t20
+    - table: base_scene_monster_rule_t21
+    - table: base_scene_monster_rule_t22
+    - table: base_scene_monster_rule_t23
+    - table: base_scene_monster_rule_t24
+    - table: base_scene_monster_rule_t25
+    - table: base_scene_monster_rule_t26
+    - table: base_scene_monster_rule_t27
+    - table: base_scene_monster_rule_t28
+    - table: base_scene_monster_rule_t29
+    - table: base_scene_monster_rule_t30
+    - table: base_scene_monster_rule_t31
+    - table: base_scene_monster_rule_t32
+    - table: base_scene_monster_rule_t33
+    - table: base_scene_monster_rule_t34
+    - table: base_scene_monster_rule_t35
+    - table: base_scene_monster_rule_t36
+    - table: base_scene_monster_rule_t37
+    - table: base_scene_monster_rule_t38
+    - table: base_scene_monster_rule_t39
+    - table: base_scene_monster_rule_t40
+    - table: base_scene_monster_t11
+    - table: base_scene_monster_t12
+    - table: base_scene_monster_t13
+    - table: base_scene_monster_t14
+    - table: base_scene_monster_t15
+    - table: base_scene_monster_t16
+    - table: base_scene_monster_t17
+    - table: base_scene_monster_t18
+    - table: base_scene_monster_t19
+    - table: base_scene_monster_t20
+    - table: base_scene_monster_t21
+    - table: base_scene_monster_t22
+    - table: base_scene_monster_t23
+    - table: base_scene_monster_t24
+    - table: base_scene_monster_t25
+    - table: base_scene_monster_t26
+    - table: base_scene_monster_t27
+    - table: base_scene_monster_t28
+    - table: base_scene_monster_t29
+    - table: base_scene_monster_t30
+    - table: base_scene_monster_t31
+    - table: base_scene_monster_t32
+    - table: base_scene_monster_t33
+    - table: base_scene_monster_t34
+    - table: base_scene_monster_t35
+    - table: base_scene_monster_t36
+    - table: base_scene_monster_t37
+    - table: base_scene_monster_t38
+    - table: base_scene_monster_t39
+    - table: base_scene_monster_t40
+    - table: base_scene_monster_t41
+    - table: base_scene_monster_t42
+    - table: base_scene_monster_t43
+    - table: base_scene_monster_t44
+    - table: base_scene_monster_t45
+    - table: base_scene_monster_t46
+    - table: base_scene_monster_t47
+    - table: base_scene_monster_t49
+    - table: base_scene_monster_t50
+    - table: base_scene_site
+      columns:
+          - next_scene_site_id
+          - scene_type_id_min
+          - scene_type_id_max
+    - table: base_scene_site_t12
+    - table: base_scene_site_t13
+    - table: base_scene_site_t14
+    - table: base_scene_site_t15
+    - table: base_scene_site_t16
+    - table: base_scene_site_t17
+    - table: base_scene_site_t18
+    - table: base_scene_site_t19
+    - table: base_scene_site_t20
+    - table: base_scene_site_t21
+    - table: base_scene_site_t22
+    - table: base_scene_site_t23
+    - table: base_scene_site_t24
+    - table: base_scene_site_t25
+    - table: base_scene_site_t26
+    - table: base_scene_site_t27
+    - table: base_scene_site_t28
+    - table: base_scene_site_t29
+    - table: base_scene_site_t30
+    - table: base_scene_site_t31
+    - table: base_scene_site_t32
+    - table: base_scene_site_t33
+    - table: base_scene_site_t34
+    - table: base_scene_site_t35
+    - table: base_scene_site_t36
+    - table: base_scene_site_t37
+    - table: base_scene_site_t38
+    - table: base_scene_site_t39
+    - table: base_scene_site_t40
+    - table: base_scene_site_t41
+    - table: base_scene_site_t42
+    - table: base_scene_site_t43
+    - table: base_scene_t11
+    - table: base_scene_t12
+    - table: base_scene_t13
+    - table: base_scene_t14
+    - table: base_scene_t15
+    - table: base_scene_t16
+    - table: base_scene_t17
+    - table: base_scene_t18
+    - table: base_scene_t19
+    - table: base_scene_t20
+    - table: base_scene_t21
+    - table: base_scene_t22
+    - table: base_scene_t23
+    - table: base_scene_t24
+    - table: base_scene_t25
+    - table: base_scene_t26
+    - table: base_scene_t27
+    - table: base_scene_t28
+    - table: base_scene_t29
+    - table: base_scene_t30
+    - table: base_scene_t31
+    - table: base_scene_t32
+    - table: base_scene_t33
+    - table: base_scene_t34
+    - table: base_scene_t35
+    - table: base_scene_t36
+    - table: base_scene_t37
+    - table: base_scene_t38
+    - table: base_scene_t39
+    - table: base_scene_t40
+    - table: base_scene_t41
+    - table: base_scene_t42
+    - table: base_scene_t43
+    - table: base_scene_t44
+    - table: base_scene_t45
+    - table: base_scene_t46
+    - table: base_scene_t47
+    - table: base_scene_t49
+    - table: base_scene_t50
+    - table: base_scene_type
+      columns:
+          - scene_type_desc
+          - p_scene_type
+    - table: base_sdk
+    - table: base_sdk_mhtjs
+    - table: base_sdk_wechat
+    - table: base_sdk_wechat_subscribe
+      columns:
+          - template_data
+          - subscribe_desc
+    - table: base_search
+      columns:
+          - master_id
+          - weight
+          - prop_desc
+    - table: base_seize_war_achv
+    - table: base_seize_war_fall
+    - table: base_seize_war_robot_rule
+    - table: base_sharding_gr
+    - table: base_sharding_gs
+    - table: base_shop
+      columns:
+          - limit_vip
+          - shop_desc
+    - table: base_shop_cond_type
+      columns:
+          - remark
+    - table: base_shop_fall
+    - table: base_shop_prop
+    - table: base_shop_show_type
+    - table: base_sim_area
+      columns:
+          - unlock_cond_id_list
+          - unlock_fall_id
+    - table: base_sim_axis
+      columns:
+          - axis_remark
+    - table: base_sim_chariot_level
+      columns:
+          - unlock_cond_id
+          - fall_type_id
+          - fall_num
+    - table: base_sim_event_type
+    - table: base_sim_fall
+    - table: base_sim_main_level
+      columns:
+          - cond_id_list
+          - fall_id
+    - table: base_sim_trigger_action_type
+    - table: base_sim_trigger_cond_type
+    - table: base_sim_trigger_drop_action
+    - table: base_sim_trigger_event
+    - table: base_sim_trigger_rule
+    - table: base_sim_trigger_rule_event_rel
+    - table: base_sim_trigger_type
+    - table: base_sim_tri_action_type
+    - table: base_sim_tri_cond_type
+    - table: base_sim_tri_drop_action
+    - table: base_sim_tri_event
+      columns:
+          - axis_id
+          - duration
+          - action_param1
+          - action_param3
+          - drop_action_param1
+          - fall_id
+          - is_dot
+    - table: base_sim_tri_rule
+    - table: base_sim_tri_rule_event_rel
+    - table: base_skill
+      columns:
+          - skill_desc1
+          - skill_desc2
+    - table: base_skill_level
+      columns:
+          - picker_id
+          - picker_num
+          - attack_distance
+          - recover_mp
+          - release_mp
+          - init_cd
+          - release_cd
+          - skill_args
+    - table: base_skill_picker
+    - table: base_sys_maintenance
+    - table: base_task_cond
+    - table: base_task_cond_fall
+    - table: base_task_cond_fall_t230
+    - table: base_task_cond_fall_t243
+    - table: base_task_cond_fall_t254
+    - table: base_task_cond_fall_t255
+    - table: base_task_cond_fall_t504
+    - table: base_task_cond_fall_t507
+    - table: base_task_cond_fall_t510
+    - table: base_task_cond_fall_t511
+    - table: base_task_cond_fall_t512
+    - table: base_task_cond_fall_t513
+    - table: base_task_cond_module
+      columns:
+          - date_key_type
+          - unlock_interval_days
+    - table: base_task_cond_module_t230
+    - table: base_task_cond_module_t243
+    - table: base_task_cond_module_t254
+    - table: base_task_cond_module_t255
+    - table: base_task_cond_module_t504
+    - table: base_task_cond_module_t507
+    - table: base_task_cond_module_t510
+    - table: base_task_cond_module_t511
+    - table: base_task_cond_module_t512
+    - table: base_task_cond_module_t513
+    - table: base_task_cond_t230
+    - table: base_task_cond_t243
+    - table: base_task_cond_t254
+    - table: base_task_cond_t255
+    - table: base_task_cond_t504
+    - table: base_task_cond_t507
+    - table: base_task_cond_t510
+    - table: base_task_cond_t511
+    - table: base_task_cond_t512
+    - table: base_task_cond_t513
+    - table: base_task_cond_type
+      columns:
+          - cond_type_mode
+          - cond_type_desc1
+          - cond_type_desc2
+          - cond_type_note
+    - table: base_touch_gold
+    - table: base_tower_fall
+    - table: base_vip_gift

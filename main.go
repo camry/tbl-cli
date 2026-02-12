@@ -12,7 +12,7 @@ import (
 
 func main() {
     if carbon.Now().Gt(carbon.CreateFromDateTime(2027, 1, 1, 0, 0, 0)) {
-        glog.Fatalf("The tbl %s %s Not compatible with %s operating system.", cmd.Version, runtime.Version(), runtime.GOOS)
+        glog.Fatalf("The tbl-cli %s %s Not compatible with %s operating system.", cmd.Version, runtime.Version(), runtime.GOOS)
     }
     if err := cmd.Execute(); err != nil {
         glog.Fatal(gerror.Wrap(err, "tbl execute error"))

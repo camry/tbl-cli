@@ -82,6 +82,9 @@ var (
             icMap["base_json_proto"] = &model.IgnoreTable{
                 Table: "base_json_proto",
             }
+            icMap["c_tables"] = &model.IgnoreTable{
+                Table: "c_tables",
+            }
 
             pbPkg, ok := lo.Last(strings.Split(goPkg, "/"))
             if !ok {

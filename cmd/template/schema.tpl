@@ -15,7 +15,7 @@ func TableFind(db *gorm.DB, tableName string) (*gorm.DB, proto.Message) {
     {{- range .Tables}}
     case "{{ .TableName }}":
         tableList := &{{ $pbPackage }}.{{ .TableNamePascalCase }}List{}
-        tx := db.Table(tableName).Find(&tableList.Tables)
+        tx := db.Table(tableName).Find(&tableList.Items)
         return tx, tableList
     {{- end}}
     }

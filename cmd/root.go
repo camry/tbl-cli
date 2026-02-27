@@ -22,7 +22,7 @@ var (
     //go:embed .version
     Version string
     //go:embed template/schema.tpl
-    TemplateTable string
+    TemplateSchemaTpl string
 )
 
 func Execute() error {
@@ -108,7 +108,7 @@ var (
                 templateSchema.Tables = append(templateSchema.Tables, templateTable)
             }
 
-            tpl, err := template.New("TemplateSchema").Parse(TemplateTable)
+            tpl, err := template.New("TemplateSchemaTpl").Parse(TemplateSchemaTpl)
             if err != nil {
                 glog.Fatal(gerror.Wrapf(err, "template.New Failed"))
             }

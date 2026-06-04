@@ -14,8 +14,8 @@ import (
     "github.com/spf13/cobra"
     "github.com/spf13/viper"
 
-    "tbl-cli/internal/gdb"
-    "tbl-cli/internal/model"
+    "gitea.meigushi.go/meigushi/tbl-cli/internal/gdb"
+    "gitea.meigushi.go/meigushi/tbl-cli/internal/model"
 )
 
 var (

@@ -73,17 +73,13 @@ var (
             if err != nil {
                 glog.Fatal(gerror.Wrapf(err, "Unmarshal Failed"))
             }
-            icMap := lo.SliceToMap(ic.Ignores, func(item *model.IgnoreTable) (string, *model.IgnoreTable) {
-                return item.Table, item
-            })
-            icMap["base_json"] = &model.IgnoreTable{
-                Table: "base_json",
-            }
-            icMap["base_json_proto"] = &model.IgnoreTable{
-                Table: "base_json_proto",
-            }
-            icMap["c_tables"] = &model.IgnoreTable{
-                Table: "c_tables",
+
+            icMap := make(map[string]*model.IgnoreTable, 100)
+            for _, ignore := range ic.Ignores {
+                if len(ignore.Columns) > 0 {
+                    continue
+                }
+                icMap[ignore.Table] = ignore
             }
 
             pbPkg, ok := lo.Last(strings.Split(goPkg, "/"))

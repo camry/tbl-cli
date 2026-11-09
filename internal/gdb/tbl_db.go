@@ -11,8 +11,8 @@ import (
     "gorm.io/gorm"
     "gorm.io/gorm/logger"
 
-    "gitea.meigushi.go/meigushi/tbl-cli/internal/def"
-    "gitea.meigushi.go/meigushi/tbl-cli/internal/model"
+    "github.com/camry/tbl-cli/internal/def"
+    "github.com/camry/tbl-cli/internal/model"
 )
 
 type TblDB struct {

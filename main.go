@@ -7,7 +7,7 @@ import (
     "github.com/camry/g/v2/glog"
     "github.com/dromara/carbon/v2"
 
-    "gitea.meigushi.go/meigushi/tbl-cli/cmd"
+    "github.com/camry/tbl-cli/cmd"
 )
 
 func main() {
